@@ -1,14 +1,11 @@
-import type { Product } from "~/models/product";
 import { getAmountStr, getBrCurrencyStr } from "~/utils/text-format";
-
-interface ProductCardProps {
-  product: Product;
-}
+import type { ProductCardProps } from "./interfaces";
 
 export function ProductCard({ product }: ProductCardProps) {
   const { name, price, quantity,  imgUrl } = product;
   const currencyPrice = getBrCurrencyStr(price);
   const amount = getAmountStr(quantity);
+  
   return (
     <div className="flex flex-col w-[300px] h-[500px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
       <img className="rounded-t-lg w-[300px] h-[300px] object-cover overflow-auto" src={imgUrl} alt="" />
