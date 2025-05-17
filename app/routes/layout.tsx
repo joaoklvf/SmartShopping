@@ -1,5 +1,6 @@
 import { Navbar } from "~/components/navbar/navbar";
-import type { Route } from "./+types/main";
+import type { Route } from "./+types/layout";
+import { Outlet } from "react-router";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -8,8 +9,14 @@ export function meta({ }: Route.MetaArgs) {
   ];
 }
 
-export default function Main() {
+export default function Layout() {
   return (
-    <Navbar />
+    <div>
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
+      {/* <Footer /> */}
+    </div>
   );
-}
+};
