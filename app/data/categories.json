@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Vestuário",
+    "id": "cat-1"
+  },
+  {
+    "name": "Calçados",
+    "id": "cat-2"
+  },
+  {
+    "name": "Acessórios",
+    "id": "cat-3"
+  }
+]

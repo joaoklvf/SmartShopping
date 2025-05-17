@@ -1,7 +1,42 @@
 [
-  { "id": "prod-1", "name": "Camiseta Básica",   "price":  50.0, "quantity": 10, "category": "Vestuário" },
-  { "id": "prod-2", "name": "Calça Jeans",       "price": 120.0, "quantity":  5, "category": "Vestuário" },
-  { "id": "prod-3", "name": "Tênis Esportivo",   "price": 200.0, "quantity":  8, "category": "Calçados"   },
-  { "id": "prod-4", "name": "Relógio Moderno",   "price": 350.0, "quantity":  3, "category": "Acessórios" },
-  { "id": "prod-5", "name": "Boné Casual",       "price":  80.0, "quantity": 15, "category": "Acessórios" }
+  {
+    "id": "prod-1",
+    "name": "Camiseta Básica",
+    "price": 50.0,
+    "quantity": 10,
+    "categoryId": "cat-1",
+    "imgUrl": "app/assets/images/camiseta-basica.webp"
+  },
+  {
+    "id": "prod-2",
+    "name": "Calça Jeans",
+    "price": 120.0,
+    "quantity": 5,
+    "categoryId": "cat-1",
+    "imgUrl": "app/assets/images/calca-jeans.webp"
+  },
+  {
+    "id": "prod-3",
+    "name": "Tênis Esportivo",
+    "price": 200.0,
+    "quantity": 8,
+    "categoryId": "cat-2",
+    "imgUrl": "app/assets/images/tenis-esportivo.webp"
+  },
+  {
+    "id": "prod-4",
+    "name": "Relógio Moderno",
+    "price": 350.0,
+    "quantity": 3,
+    "categoryId": "cat-3",
+    "imgUrl": "app/assets/images/relogio-moderno.webp"
+  },
+  {
+    "id": "prod-5",
+    "name": "Boné Casual",
+    "price": 80.0,
+    "quantity": 15,
+    "categoryId": "cat-3",
+    "imgUrl": "app/assets/images/bone-casual.webp"
+  }
 ]
