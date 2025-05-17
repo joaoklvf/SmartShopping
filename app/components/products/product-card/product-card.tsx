@@ -2,18 +2,20 @@ import { getAmountStr, getBrCurrencyStr } from "~/utils/text-format";
 import type { ProductCardProps } from "./interfaces";
 
 export function ProductCard({ product }: ProductCardProps) {
-  const { name, price, quantity,  imgUrl } = product;
+  const { name, price, quantity, imgUrl } = product;
   const currencyPrice = getBrCurrencyStr(price);
   const amount = getAmountStr(quantity);
-  
+
   return (
     <div className="flex flex-col w-[300px] h-[500px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-      <img className="rounded-t-lg w-[300px] h-[300px] object-cover overflow-auto" src={imgUrl} alt="" />
-      <div className='m-4'>
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
-        <p>{currencyPrice}</p>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Quantidade disponível: {amount}</p>
-        <button type="button" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Adicionar ao carrinho</button>
+      <img className="flex-none rounded-t-lg w-[300px] h-[300px] object-cover overflow-auto" src={imgUrl} alt="" />
+      <div className='m-4 h-full flex flex-col justify-between'>
+        <div>
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
+          <p>{currencyPrice}</p>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Quantidade disponível: {amount}</p>
+        </div>
+        <button type="button" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 self-center">Adicionar ao carrinho</button>
       </div>
     </div>
   );
