@@ -1,6 +1,6 @@
 import products from '../../data/products.json';
 import categories from '../../data/categories.json';
-import { ProductSession } from './product-session/product-session';
+import { CategoryProductsSession } from './category-products-session/product-session';
 import type { CategoryProducts } from '~/models/category-products';
 
 export function Products() {
@@ -12,7 +12,7 @@ export function Products() {
   return (
     <div>
       {categoryProducts.map(categoryProduct => (
-        <ProductSession
+        <CategoryProductsSession
           key={categoryProduct.category.id}
           categoryProducts={categoryProduct}
         />

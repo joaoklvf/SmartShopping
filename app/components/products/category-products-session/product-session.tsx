@@ -1,7 +1,7 @@
 import { ProductCard } from "../product-card/product-card";
-import type { ProductSessionProps } from "./interfaces";
+import type { CategoryProductsSessionProps } from "./interfaces";
 
-export function ProductSession({ categoryProducts }: ProductSessionProps) {
+export function CategoryProductsSession({ categoryProducts }: CategoryProductsSessionProps) {
   const { category, products } = categoryProducts;
   const sectionId = `category-${category.id}`;
 
