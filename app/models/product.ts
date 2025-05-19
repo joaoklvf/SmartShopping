@@ -1,9 +1,9 @@
-import type { Entity } from "./entity";
+import type { Entity } from "./Entity";
 
 export interface Product extends Entity {
   price: number;
   quantity: number;
   categoryId: string;
   imgUrl: string;
-  promotional_price?: number;
+  promotionalPrice?: number;
 }

@@ -1,5 +1,5 @@
-import { ProductCard } from "../product-card/product-card";
-import type { CategoryProductsSessionProps } from "./interfaces";
+import { ProductCard } from "../ProductCard/ProductCard";
+import type { CategoryProductsSessionProps } from "./CategoryProductsSessionProps";
 
 export function CategoryProductsSession({ categoryProducts }: CategoryProductsSessionProps) {
   const { category, products } = categoryProducts;

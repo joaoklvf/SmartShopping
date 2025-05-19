@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CartIcon } from "./cart-icon";
+import { CartIcon } from "./CartIcon";
 
 export function Navbar() {
   const [isMobileOpened, setIsMobileOpened] = useState(false)

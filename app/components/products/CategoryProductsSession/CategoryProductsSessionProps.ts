@@ -1,4 +1,4 @@
-import type { CategoryProducts } from "~/models/category-products";
+import type { CategoryProducts } from "~/models/CategoryProducts";
 
 export interface CategoryProductsSessionProps {
   categoryProducts: CategoryProducts

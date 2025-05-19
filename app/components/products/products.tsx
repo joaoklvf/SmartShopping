@@ -1,7 +1,7 @@
 import products from '../../data/products.json';
 import categories from '../../data/categories.json';
-import { CategoryProductsSession } from './category-products-session/category-products-session';
-import type { CategoryProducts } from '~/models/category-products';
+import { CategoryProductsSession } from './CategoryProductsSession/CategoryProductsSession';
+import type { CategoryProducts } from '~/models/CategoryProducts';
 
 export function Products() {
   const categoryProducts: CategoryProducts[] = categories.map(category => ({

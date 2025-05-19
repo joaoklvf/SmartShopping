@@ -1,5 +1,5 @@
 import { getAmountStr, getBrCurrencyStr } from "~/utils/text-format";
-import type { ProductCardProps } from "./interfaces";
+import type { ProductCardProps } from "./ProductCardProps";
 
 export function ProductCard({ product }: ProductCardProps) {
   const { name, price, quantity, imgUrl } = product;
